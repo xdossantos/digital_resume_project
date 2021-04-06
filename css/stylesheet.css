@@ -1,0 +1,141 @@
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1FAEE;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.modal-header {
+    background-color: #457B9D;
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+}
+
+hgroup {
+    background-image: url("../images/header_background.jpg");
+    background-color: #457B9D;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#sidebar {
+    background-color: #A8DADC;
+}
+
+.profile_image {
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+}
+
+a:hover {
+    background-color: gray;
+    border-radius: 5%;
+}
+
+.list-unstyled li:first-child {
+    font-weight: 600;
+    margin-bottom: 1%;
+    color: #1D3557;
+}
+
+@keyframes ringing {
+    0% {transform: rotate(0);}
+    5% {transform: rotate(30deg);}
+    10% {transform: rotate(-28deg);}
+    15% {transform: rotate(34deg);}
+    20% {transform: rotate(-32deg);}
+    25% {transform: rotate(30deg);}
+    30% {transform: rotate(-28deg);}
+    35% {transform: rotate(26deg);}
+    40% {transform: rotate(-24deg);}
+    45% {transform: rotate(22deg);}
+    50% {transform: rotate(-20deg);}
+    55% {transform: rotate(18deg);}
+    60% {transform: rotate(-16deg);}
+    65% {transform: rotate(14deg);}
+    70% {transform: rotate(-12deg);}
+    75% {transform: rotate(10deg);}
+    80% {transform: rotate(-8deg);}
+    85% {transform: rotate(6deg);}
+    90% {transform: rotate(-4deg);}
+    95% {transform: rotate(2deg);}
+    100% {transform: rotate(-1deg);}
+  }
+
+#ring:hover {
+    animation-name: ringing;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-play-state: running;
+}
+
+@keyframes mailer {
+    0% {transform: translateY(0px);}
+    10% {transform: translateY(-5px);}
+    20% {transform: translateY(0px);}
+    30% {transform: translateY(-10px);}
+    40% {transform: translateY(0px);}
+    50% {transform: translateY(-15px);}
+    60% {transform: translateY(0px);}
+    70% {transform: translateY(-20px);}
+    80% {transform: translateY(0px);}
+    90% {transform: translateY(-25px);}
+    100% {transform: translateY(0px);}
+}
+
+#mail:hover {
+    animation-name: mailer;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in;
+    animation-play-state: running;
+}
+
+
+footer{
+    background-color: #457B9D;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    h3 {margin-top: 3%;}
+    .list-unstyled {margin-left:5%}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
+    .profile_image {width: 100%;}
+    .profile_image {margin-left: 0%;}
+    .profile_image {margin-right: 0%;}
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .profile_image {max-width: 300px;}
+    .profile_image {max-height: auto;}
+    .profile_image {display: block; margin: 0 auto;}
+
+}
